@@ -47,21 +47,48 @@
         }
     },
     {
-        "key": "alt+down",
+        "key": "alt+down"
+    },
+    {
+        "key": "alt+up",
+    },
+    {
+        "key": "alt+right"
+    },
+    {
+        "key": "alt+left"
+    },
+    {
+        "key": "ctrl+b+down"
+    },
+    {
+        "key": "ctrl+b+up"
+        
+    },
+    {
+        "key": "ctrl+b+right"
+        
+    },
+    {
+        "key": "ctrl+b+left"
+        
+    },
+    {
+        "key": "ctrl+shift+down",
         "command": "runCommands",
         "args": {
             "commands": [
                 "workbench.action.terminal.toggleTerminal"
             ]
-        }
+        },
     },
     {
-        "key": "alt+0",
         "command": "runCommands",
+        "key": "alt+0",
         "args": {
             "commands": [
-                "workbench.action.nextEditor",
                 // Run ctrl+l or clear screen in terminal
+                "workbench.action.nextEditor",
             ]
         }
     },
@@ -100,5 +127,16 @@
         },
         // Do it if current focus is terminal or chat 
         "when": "auxiliaryBarFocus"
+    },
+    {
+        // Press right arrow key to accept changes simillar to tab
+        "key": "right",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "editor.action.inlineSuggest.commit"
+            ]
+        },
+        "when": "inlineSuggestionVisible && editorTextFocus"
     }
 ]

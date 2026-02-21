@@ -1,4 +1,6 @@
 {
+    "update.mode": "none", // Disable automatic updates
+    "extensions.autoUpdate": false, // Disable automatic extension updates
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
@@ -7,6 +9,8 @@
     "git.openRepositoryInParentFolders": "never",
     "editor.fontFamily": "'Monaspace Neon', monospace",
     "chat.editor.fontWeight": "default",
+    "chat.editor.fontFamily": "Monaspace Neon",
+    "chat.editor.fontSize": 14,
     // Change the comment color to a more visible one, and 
     // do not use italic font style for comments
     "editor.tokenColorCustomizations": {
