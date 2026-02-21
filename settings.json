@@ -1,0 +1,49 @@
+{
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.logPath": "/home/ritetiwa/.vscode-neovim.log",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "git.openRepositoryInParentFolders": "never",
+    "editor.fontFamily": "'Monaspace Neon', monospace",
+    "chat.editor.fontWeight": "default",
+    // Change the comment color to a more visible one, and 
+    // do not use italic font style for comments
+    "editor.tokenColorCustomizations": {
+        "comments": "#707270",
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.lineHeight": 20,
+    "editor.fontWeight": "365",
+    "extensions.ignoreRecommendations": true,
+    "editor.fontSize": 16,
+    // Turn off terminal bold font use only normal font weight
+    "terminal.integrated.fontWeightBold": "normal",
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.rightClickBehavior": "paste",
+    "terminal.integrated.fontWeight": "365",
+    "terminal.integrated.fontFamily": "'Monaspace Neon', monospace",
+    "python.languageServer": "Default",
+    "workbench.editor.showTabIndex": true,
+    "workbench.editor.showIcons": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.untitled.labelFormat": "name",
+    "workbench.editor.labelFormat": "default",
+    "workbench.editor.alwaysShowEditorActions": false,
+    "workbench.welcomePage.walkthroughs.openOnInstall": false,
+    "workbench.startupEditor": "none",
+    "clangd.arguments": ["--background-index","--header-insertion=never"],
+    // Exclude build directories from file explorer
+    "files.exclude": {
+        "**/build": true,
+        "**/dist": true,
+        "**/out": true,
+        "**/node_modules": true,
+        "**/.git": true,
+        "**/.vscode": true
+    },
+    "editor.suggest.showIcons": false,
+    "workbench.statusBar.visible": true,
+}

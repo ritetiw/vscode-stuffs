@@ -1,0 +1,104 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+shift+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.closeSidebar",
+                "workbench.action.closePanel",
+                "workbench.action.closeAuxiliaryBar"
+            ]
+        }
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.toggleSidebarVisibility",
+                "workbench.action.toggleAuxiliaryBar",
+                "workbench.action.terminal.toggleTerminal"
+            ]
+        }
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.chat.toggle"
+            ]
+        }
+    },
+    {
+        "key": "ctrl+shift+x",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                // Close the focused editor
+                "workbench.action.closeActiveEditor" 
+            ]
+        }
+    },
+    {
+        "key": "alt+down",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.terminal.toggleTerminal"
+            ]
+        }
+    },
+    {
+        "key": "alt+0",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.nextEditor",
+                // Run ctrl+l or clear screen in terminal
+            ]
+        }
+    },
+    {
+        // Shrtcut to move to next chunk of not stagesd diff in git
+        "key": "alt+c",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "editor.action.dirtydiff.next"
+            ]
+        } 
+    },
+    {
+        // Zoom terminal or editor or focussed window
+        "key": "ctrl+shift+z",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.toggleMaximizedPanel",
+                // Maximize chat window
+            ]
+        },
+        // Do it if current focus is terminal or chat 
+        "when": "terminalFocus"
+    },
+    {
+        // Zoom terminal or editor or focussed window
+        "key": "ctrl+shift+z",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                // Maximize chat window
+                "workbench.action.toggleMaximizedAuxiliaryBar"
+            ]
+        },
+        // Do it if current focus is terminal or chat 
+        "when": "auxiliaryBarFocus"
+    }
+]
