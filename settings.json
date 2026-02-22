@@ -1,6 +1,6 @@
 {
-    "update.mode": "none", // Disable automatic updates
-    "extensions.autoUpdate": false, // Disable automatic extension updates
+    "update.mode": "none",
+    "extensions.autoUpdate": false,
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
@@ -11,17 +11,14 @@
     "chat.editor.fontWeight": "default",
     "chat.editor.fontFamily": "Monaspace Neon",
     "chat.editor.fontSize": 14,
-    // Change the comment color to a more visible one, and 
-    // do not use italic font style for comments
     "editor.tokenColorCustomizations": {
-        "comments": "#707270",
+        "comments": "#707270"
     },
     "security.workspace.trust.untrustedFiles": "open",
     "editor.lineHeight": 20,
     "editor.fontWeight": "365",
     "extensions.ignoreRecommendations": true,
     "editor.fontSize": 16,
-    // Turn off terminal bold font use only normal font weight
     "terminal.integrated.fontWeightBold": "normal",
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.fontSize": 14,
@@ -39,7 +36,6 @@
     "workbench.welcomePage.walkthroughs.openOnInstall": false,
     "workbench.startupEditor": "none",
     "clangd.arguments": ["--background-index","--header-insertion=never"],
-    // Exclude build directories from file explorer
     "files.exclude": {
         "**/build": true,
         "**/dist": true,
@@ -50,4 +46,5 @@
     },
     "editor.suggest.showIcons": false,
     "workbench.statusBar.visible": true,
+    "window.menuBarVisibility": "compact"
 }
